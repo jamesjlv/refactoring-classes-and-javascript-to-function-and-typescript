@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { FiEdit3, FiTrash } from "react-icons/fi";
+import { useState } from 'react';
+import { FiEdit3, FiTrash } from 'react-icons/fi';
 
-import { Container } from "./styles";
-import api from "../../services/api";
+import { Container } from './styles';
+import api from '../../services/api';
 
 interface FoodProps {
   food: {
@@ -26,11 +26,7 @@ interface Foods {
   image: string;
 }
 
-export default function Food({
-  food,
-  handleDelete,
-  handleEditFood,
-}: FoodProps) {
+export default function Food({ food, handleDelete, handleEditFood }: FoodProps) {
   const [isAvailable, setIsAvailable] = useState(food.available);
 
   async function toggleAvailable() {
@@ -80,7 +76,7 @@ export default function Food({
         </div>
 
         <div className="availability-container">
-          <p>{isAvailable ? "Disponível" : "Indisponível"}</p>
+          <p>{isAvailable ? 'Disponível' : 'Indisponível'}</p>
 
           <label htmlFor={`available-switch-${food.id}`} className="switch">
             <input

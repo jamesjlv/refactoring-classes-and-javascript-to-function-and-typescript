@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 interface PropsItem {
   available: boolean;
 }
@@ -117,7 +117,7 @@ export const Container = styled.div`
 
           &:before {
             position: absolute;
-            content: "";
+            content: '';
             height: 20px;
             width: 40px;
             left: 8px;
